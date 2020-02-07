@@ -4,10 +4,10 @@ import { terser } from "rollup-plugin-terser";
 import resolve from "rollup-plugin-node-resolve"
 
 export default {
-  input: 'src/polystate.js',
+  input: 'src/classmatic.js',
   output: {
-    name: 'Polystate',
-    file: 'dist/polystate.min.js',
+    name: 'Classmatic',
+    file: 'dist/classmatic.min.js',
     format: 'umd',
     sourcemap: true,
   },
