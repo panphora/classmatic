@@ -16,7 +16,7 @@ Add this to your `<head>`:
 
 #### Sidebar
 
-<img src="demo/gifs/classmatic-demo--sidebar.gif" width="100">
+<img src="demo/gifs/classmatic-demo--sidebar.gif" width="400">
 
 ```html
 <button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
