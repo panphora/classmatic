@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Polystate demo</title>
+  <meta name="description" content="Polystate demo">
+  <link rel="stylesheet" href="demo.css?v=2">
+</head>
+<body class="tab-1-active">
+  <h1>Polystate Demos</h1>
+  <div class="demo">
+    <div class="demo__header-label">Demo 1</div>
+    <h2 class="demo__header">Sidebar</h2>
+    <div class="demo__area">
+      <div class="sidebar" data-show-if=".sidebar-open">
+        <button class="sidebar__close" data-click-to-remove-class="sidebar-open">close</button>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="demo__container">
+        <button data-click-to-toggle-class="sidebar-open">Toggle sidebar</button>
+      </div>
+    </div>
+  </div>
+  <div class="demo">
+    <div class="demo__header-label">Demo 2</div>
+    <h2 class="demo__header">Tabs</h2>
+    <div class="demo__area">
+      <div class="demo__container">
+        <button class="tab-button tab-1-button" data-click-to-add-class="tab-1-active" data-click-to-remove-class="[tab-2-active,tab-3-active]">Tab 1</button>
+        <button class="tab-button tab-2-button" data-click-to-add-class="tab-2-active" data-click-to-remove-class="[tab-1-active,tab-3-active]">Tab 2</button>
+        <button class="tab-button tab-3-button" data-click-to-add-class="tab-3-active" data-click-to-remove-class="[tab-1-active,tab-2-active]">Tab 3</button>
+        <div class="tab-content" data-show-if=".tab-1-active">Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. </div>
+        <div class="tab-content" data-show-if=".tab-2-active">Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. </div>
+        <div class="tab-content" data-show-if=".tab-3-active">Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo">
+    <div class="demo__header-label">Demo 3</div>
+    <h2 class="demo__header">Navigation Menu</h2>
+    <div class="demo__area">
+      <div class="demo__container">
+        <div class="nav-menu">
+          <button data-click-to-toggle-class="nav-menu-open">Products&nbsp; &#9662;</button>
+          <ul class="nav-menu__menu" data-click-away-to-remove-class="nav-menu-open" data-show-if=".nav-menu-open">
+            <li><a href="#">Access Connect</a></li>
+            <li><a href="#">Acquire Connect</a></li>
+            <li><a href="#">Prospect Connect</a></li>
+            <li><a href="#">Data Connect</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo">
+    <div class="demo__header-label">Demo 4</div>
+    <h2 class="demo__header">Kitchen Sink</h2>
+    <div class="demo__area demo__area--long">
+      <div class="demo__container">
+        <div>
+          <h4>Classes on body:</h4>
+          <div class="classes-on-body"></div>
+        </div>
+        <button data-click-to-toggle-class="sidebar-open">data-click-to-toggle-class="sidebar-open"</button>
+        <div data-show-if=".sidebar-open" class="show-if-box alt">data-show-if=".sidebar-open"</div>
+        <div data-hide-if=".sidebar-open" class="show-if-box">data-hide-if=".sidebar-open"</div>
+        <button data-click-to-add-class="menu-open">data-click-to-add-class="menu-open"</button>
+        <button data-click-away-to-remove-class="menu-open">data-click-away-to-remove-class="menu-open"</button>
+        <div data-show-if=".menu-open" class="show-if-box alt">data-show-if=".menu-open"</div>
+        <div data-hide-if=".menu-open" class="show-if-box">data-hide-if=".menu-open"</div>
+        <button data-click-to-toggle-class="[hello1,hello2,hello3]">data-click-to-toggle-class="[hello1, hello2, hello3]"</button>
+        <button data-click-away-to-toggle-class="[hello1,hello2,hello3]">data-click-away-to-toggle-class="[hello1, hello2, hello3]"</button>
+        <div data-show-if=".hello1" class="show-if-box alt">data-show-if=".hello1"</div>
+        <div data-hide-if=".hello1" class="show-if-box">data-hide-if=".hello1"</div>
+      </div>
+    </div>
+  </div>
+  <script src="../src/polystate.js?v=2"></script>
+  <script>
+    showClassesOnBody();
+    document.body.addEventListener("click", event => {
+      setTimeout(() => {
+        showClassesOnBody();
+      }, 0);
+    });
+    function showClassesOnBody () {
+      document.querySelector(".classes-on-body").innerHTML = Array.from(document.body.classList).map(c => "<div class='class-tag'>" + c + "</div>").join("");
+    }
+  </script>
+</body>
+</html>
