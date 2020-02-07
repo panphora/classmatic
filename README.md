@@ -2,33 +2,21 @@
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/classmatic)
 
-Set and unset CSS classes on any element with a click.
-
-Perfect for simple websites.
+All the JavaScript you need for simple modals, dropdowns, and tabs
 
 ## Install
 
-**Option 1: Script Tag** 
-
-Add this `<script>` tag just before your closing `</body>` tag.
+Add this to your `<head>`:
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/panphora/classmatic@v0.6.1/dist/classmatic.min.js"></script>
 ```
 
-**Option 2: NPM Install**
-
-```js
-npm install classmatic
-```
-
-```js
-import classmatic from 'classmatic';
-```
-
 ## Examples
 
 #### Sidebar
+
+![Sidebar demo](classmatic-demo--sidebar.gif)
 
 ```html
 <button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
