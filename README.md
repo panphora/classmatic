@@ -16,7 +16,7 @@ Add this to your `<head>`:
 
 #### Sidebar
 
-<img src="demo/gifs/classmatic-demo--sidebar.gif" width="400">
+<img src="demo/gifs/classmatic-demo--sidebar.gif" width="400" alt="Sidebar demo">
 
 ```html
 <button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
@@ -26,6 +26,9 @@ Add this to your `<head>`:
 *Demo:* [Sidebar on Codepen](https://codepen.io/panphora/pen/ZEYRbbE)
 
 #### Tabs
+
+<img src="demo/gifs/classmatic-demo--tabs.gif" width="400" alt="Tabs demo">
+
 ```html
 <button data-click-to-add-class="tab-1-active" data-click-to-remove-class="[tab-2-active,tab-3-active]">Tab 1</button>
 <button data-click-to-add-class="tab-2-active" data-click-to-remove-class="[tab-1-active,tab-3-active]">Tab 2</button>
@@ -37,7 +40,10 @@ Add this to your `<head>`:
 
 *Demo:* [Tabs on Codepen](https://codepen.io/panphora/pen/RwNJWWx)
 
-#### Nav Menu
+#### Dropdown menu
+
+<img src="demo/gifs/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo">
+
 ```html
 <button data-click-to-toggle-class="nav-menu-open">Toggle Menu</button>
 <ul class="nav-menu__menu" data-click-away-to-remove-class="nav-menu-open" data-show-if=".nav-menu-open">
