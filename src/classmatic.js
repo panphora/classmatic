@@ -162,7 +162,20 @@
     return showStyles + hideStyles;
   }).join("");
 
-  document.head.insertAdjacentHTML("beforeend", "<style>" + visibilityStyles + "</style>")
+  function insertStyles () {
+    document.head.insertAdjacentHTML("beforeend", "<style>" + visibilityStyles + "</style>");
+  }
+
+  function onDomReady (callback) {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", callback)
+    } else {
+      callback();
+    }
+  }
+
+  onDomReady(insertStyles);
+  
 })()
 
 
