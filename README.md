@@ -64,11 +64,11 @@ Classmatic lets you use a few simple attributes to control when clicking around 
 These attributes make clicking on their element add/remove/toggle a class on any element.
 
 * `data-click-to-add-class="className selector(optional)"`
-  * Adds the `className` class to all elements that mtach `selector` (only when the current element is clicked)
+  * Adds the `className` class to all elements that match `selector` (only when the current element is clicked)
 * `data-click-to-remove-class="className selector(optional)"`
-  * Removes the `className` class from all elements that mtach `selector` (only when the current element is clicked)
+  * Removes the `className` class from all elements that match `selector` (only when the current element is clicked)
 * `data-click-to-toggle-class="className selector(optional)"`
-  * Toggles the `className` class on all elements that mtach `selector` (only when the current element is clicked)
+  * Toggles the `className` class on all elements that match `selector` (only when the current element is clicked)
 
 **Notes** 
 
@@ -81,11 +81,11 @@ These attributes make clicking on their element add/remove/toggle a class on any
 These attributes make clicking AWAY from their element add/remove/toggle a class on any element.
 
 * `data-click-away-to-add-class="className selector(optional)"`
-  * Adds the `className` class to all elements that mtach `selector` (only when an element that's not the current element is clicked)
+  * Adds the `className` class to all elements that match `selector` (only when an element that's not the current element is clicked)
 * `data-click-away-to-remove-class="className selector(optional)"`
-  * Removes the `className` class from all elements that mtach `selector` (only when an element that's not the current element is clicked)
+  * Removes the `className` class from all elements that match `selector` (only when an element that's not the current element is clicked)
 * `data-click-away-to-toggle-class="className selector(optional)"`
-  * Toggles the `className` class on all elements that mtach `selector` (only when an element that's not the current element is clicked)
+  * Toggles the `className` class on all elements that match `selector` (only when an element that's not the current element is clicked)
 
 **Important** 
 
