@@ -1,4 +1,4 @@
-# classmatic
+# Classmatic
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/classmatic)
 
@@ -16,7 +16,7 @@ Add this to your `<head>`:
 
 #### Sidebar
 
-![Sidebar demo](classmatic-demo--sidebar.gif)
+![Sidebar demo](demo/gifs/classmatic-demo--sidebar.gif)
 
 ```html
 <button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
@@ -68,7 +68,7 @@ Add this to your `<head>`:
 
 ## The Attributes
 
-classmatic lets you use a few simple attributes to control when clicking around the page will add/remove/toggle classes.
+Classmatic lets you use a few simple attributes to control when clicking around the page will add/remove/toggle classes.
 
 ### Set/unset a class when clicking on an element
 
@@ -83,7 +83,7 @@ These attributes make clicking on their element add/remove/toggle a class on any
 
 **Notes** 
 
-* If `selector` is not specified, classmatic will default to targeting the `<body>` element.
+* If `selector` is not specified, Classmatic will default to targeting the `<body>` element.
 * You can set/unset multiple classes with a single attribute by using the following syntax with braces: `data-click-to-remove-class="[className1,className2] [selector1,selector2](optional)"`. The arguments inside the brances can *NOT* have spaces between them.
 * `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selector), or `[]` (for an attribute selector)
 
@@ -104,7 +104,7 @@ These attributes make clicking AWAY from their element add/remove/toggle a class
 
 ### Control visibility of elements
 
-classmatic makes it really easy to hide and show elements based on the classes on the page.
+Classmatic makes it really easy to hide and show elements based on the classes on the page.
 
 * `data-show-if="selector"`
   * shows element *ONLY* if it or any ancestor element matches the `selector`. hides it otherwise.
@@ -113,7 +113,7 @@ classmatic makes it really easy to hide and show elements based on the classes o
 
 **Notes** 
 
-* The styles that make these attributes work are generated automatically for you as soon as classmatic loads. This is why classmatic should be loaded after your page's elements are done loading (just before the closing `</body>` tag). Otherwise, it won't know which elements to generate hide/show styles for.
+* The styles that make these attributes work are generated automatically for you as soon as Classmatic loads. This is why Classmatic should be loaded after your page's elements are done loading (just before the closing `</body>` tag). Otherwise, it won't know which elements to generate hide/show styles for.
 
 
 
