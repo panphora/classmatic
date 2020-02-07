@@ -64,6 +64,14 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.mt--32px {
+  margin-top: 32px;
+}
+
+.mb--4px {
+  margin-bottom: 4px;
+}
+
 .demo {
   margin-bottom: 1.5rem;
   padding: 1rem 0;
@@ -128,40 +136,53 @@ h1 {
 }
 
 .tab-button {
+  padding-top: 9px;
   margin-right: .5rem;
+  background-color: #dee2e6;
+  color: #495057;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tab-button:hover {
+  background-color: #ced4da;
 }
 
 .tab-1-active .tab-1-button, .tab-2-active .tab-2-button, .tab-3-active .tab-3-button {
-  background-color: #be4bdb;
+  color: #212529;
+  background-color: #fff;
+}
+
+.tab-1-active .tab-content {
+  border-top-left-radius: 0;
 }
 
 .tab-content {
-  margin-top: 1rem;
   padding: 1rem;
-  color: #9c36b5;
-  background-color: #f3d9fa;
+  color: #212529;
+  background-color: #fff;
   border-radius: 5px;
 }
 
-.nav-menu {
+.dropdown {
   position: relative;
 }
 
-.nav-menu__menu {
+.dropdown__menu {
   position: absolute;
   top: 2.75rem;
   left: 0;
   padding: 1rem 2.5rem 1rem 1rem;
   color: #fff;
-  background-color: #364fc7;
+  background-color: #4263eb;
   border-radius: 5px;
 }
 
-.nav-menu__menu a {
+.dropdown__menu a {
   color: #fff;
 }
 
-.nav-menu__menu a:hover {
+.dropdown__menu a:hover {
   color: #dbe4ff;
 }
 
@@ -190,6 +211,16 @@ h1 {
 
 .show-if-box.alt {
   background-color: #1098ad;
+}
+
+code {
+  font-size: 13px;
+  padding: 1px 4px 2px;
+  background: #495057;
+  color: #f1f3f5;
+  font-weight: 500;
+  border-radius: 3px;
+  margin: 0 3px;
 }
 
 

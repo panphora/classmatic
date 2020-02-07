@@ -44,12 +44,12 @@
   </div>
   <div class="demo">
     <div class="demo__header-label">Demo 3</div>
-    <h2 class="demo__header">Navigation Menu</h2>
+    <h2 class="demo__header">Dropdown menu</h2>
     <div class="demo__area">
       <div class="demo__container">
-        <div class="nav-menu">
-          <button data-click-to-toggle-class="nav-menu-open">Products&nbsp; &#9662;</button>
-          <ul class="nav-menu__menu" data-click-away-to-remove-class="nav-menu-open" data-show-if=".nav-menu-open">
+        <div class="dropdown">
+          <button data-click-to-toggle-class="dropdown-open">Products&nbsp; &#9662;</button>
+          <ul class="dropdown__menu" data-click-away-to-remove-class="dropdown-open" data-show-if=".dropdown-open">
             <li><a href="#">Access Connect</a></li>
             <li><a href="#">Acquire Connect</a></li>
             <li><a href="#">Prospect Connect</a></li>
@@ -65,20 +65,19 @@
     <div class="demo__area demo__area--long">
       <div class="demo__container">
         <div>
-          <h4>Classes on body:</h4>
+          <h4>ALL classes on body element:</h4>
           <div class="classes-on-body"></div>
         </div>
+        <div class="mb--4px mt--32px">Click to toggle class <code>sidebar-open</code> on <code>&lt;body></code>:</div>
         <button data-click-to-toggle-class="sidebar-open">data-click-to-toggle-class="sidebar-open"</button>
-        <div data-show-if=".sidebar-open" class="show-if-box alt">data-show-if=".sidebar-open"</div>
-        <div data-hide-if=".sidebar-open" class="show-if-box">data-hide-if=".sidebar-open"</div>
+        <div class="mb--4px mt--32px">Click to add class <code>menu-open</code> on <code>&lt;body></code>:</div>
         <button data-click-to-add-class="menu-open">data-click-to-add-class="menu-open"</button>
+        <div class="mb--4px mt--32px">Click <b>away</b> to remove class <code>menu-open</code> on <code>&lt;body></code>:</div>
         <button data-click-away-to-remove-class="menu-open">data-click-away-to-remove-class="menu-open"</button>
-        <div data-show-if=".menu-open" class="show-if-box alt">data-show-if=".menu-open"</div>
-        <div data-hide-if=".menu-open" class="show-if-box">data-hide-if=".menu-open"</div>
+        <div class="mb--4px mt--32px">Click to toggle classes <code>hello1</code>, <code>hello2</code>, <code>hello3</code> on <code>&lt;body></code>:</div>
         <button data-click-to-toggle-class="[hello1,hello2,hello3]">data-click-to-toggle-class="[hello1, hello2, hello3]"</button>
+        <div class="mb--4px mt--32px">Click <b>away</b> to toggle classes <code>hello1</code>, <code>hello2</code>, <code>hello3</code> on <code>&lt;body></code>:</div>
         <button data-click-away-to-toggle-class="[hello1,hello2,hello3]">data-click-away-to-toggle-class="[hello1, hello2, hello3]"</button>
-        <div data-show-if=".hello1" class="show-if-box alt">data-show-if=".hello1"</div>
-        <div data-hide-if=".hello1" class="show-if-box">data-hide-if=".hello1"</div>
       </div>
     </div>
   </div>
