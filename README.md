@@ -63,7 +63,7 @@ Or `npm install classmatic`.
 <div class="tab-content" data-show-if=".tab-3-active">Content for the third tab.</div>
 ```
 
-*Demo:* [Tabs on Codepen](https://codepen.io/panphora/pen/RwNJWWx)
+*Demo:* [Tabs on Codepen](https://codepen.io/panphora/pen/RwNJWWx?editors=1000)
 
 #### Dropdown menu
 
