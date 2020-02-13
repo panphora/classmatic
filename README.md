@@ -36,7 +36,7 @@ Or `npm install classmatic`.
 <button data-click-to-toggle-class="sidebar-open">Toggle sidebar</button>
 ```
 
-*Demo:* [Sidebar on Codepen](https://codepen.io/panphora/pen/ZEYRbbE)
+*Demo:* [Sidebar on Codepen](https://codepen.io/panphora/pen/ZEYRbbE?editors=1000)
 
 #### Tabs
 
