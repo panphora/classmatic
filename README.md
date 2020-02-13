@@ -2,6 +2,8 @@
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/classmatic)
 
+Click an element to add or remove a class on another element.
+
 All the JavaScript you need for simple modals, dropdowns, and tabs
 
 ## Install
