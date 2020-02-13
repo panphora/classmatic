@@ -14,6 +14,8 @@ Add this to your `<head>`:
 <script src="https://cdn.jsdelivr.net/gh/panphora/classmatic@v0.6.1/dist/classmatic.min.js"></script>
 ```
 
+Or `npm install classmatic`.
+
 ## Examples
 
 #### Sidebar
