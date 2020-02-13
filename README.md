@@ -4,7 +4,7 @@
 
 Click an element to add or remove a class on another element.
 
-All the JavaScript you need for simple modals, dropdowns, and tabs
+> All the JavaScript you need for simple modals, dropdowns, and tabs
 
 ## Install
 
