@@ -23,8 +23,17 @@ Or `npm install classmatic`.
 <img src="demo/gifs/classmatic-demo--sidebar.gif" width="400" alt="Sidebar demo">
 
 ```html
-<button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
-<aside data-click-away-to-remove-class="sidebar-open" data-show-if=".sidebar-open">sidebar content</aside>
+<div class="sidebar" data-show-if=".sidebar-open">
+  <button class="sidebar__close" data-click-to-remove-class="sidebar-open">close</button>
+  <h3>Menu</h3>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+<button data-click-to-toggle-class="sidebar-open">Toggle sidebar</button>
 ```
 
 *Demo:* [Sidebar on Codepen](https://codepen.io/panphora/pen/ZEYRbbE)
@@ -34,12 +43,24 @@ Or `npm install classmatic`.
 <img src="demo/gifs/classmatic-demo--tabs.gif" width="400" alt="Tabs demo">
 
 ```html
-<button data-click-to-add-class="tab-1-active" data-click-to-remove-class="[tab-2-active,tab-3-active]">Tab 1</button>
-<button data-click-to-add-class="tab-2-active" data-click-to-remove-class="[tab-1-active,tab-3-active]">Tab 2</button>
-<button data-click-to-add-class="tab-3-active" data-click-to-remove-class="[tab-1-active,tab-2-active]">Tab 3</button>
-<div data-show-if=".tab-1-active">Content for the first tab.</div>
-<div data-show-if=".tab-2-active">Content for the second tab.</div>
-<div data-show-if=".tab-3-active">Content for the third tab.</div>
+<button 
+  class="tab-button tab-1-button" 
+  data-click-to-add-class="tab-1-active" 
+  data-click-to-remove-class="[tab-2-active,tab-3-active]"
+>Tab 1</button>
+<button 
+  class="tab-button tab-2-button" 
+  data-click-to-add-class="tab-2-active" 
+  data-click-to-remove-class="[tab-1-active,tab-3-active]"
+>Tab 2</button>
+<button 
+  class="tab-button tab-3-button" 
+  data-click-to-add-class="tab-3-active" 
+  data-click-to-remove-class="[tab-1-active,tab-2-active]"
+>Tab 3</button>
+<div class="tab-content" data-show-if=".tab-1-active">Content for the first tab.</div>
+<div class="tab-content" data-show-if=".tab-2-active">Content for the second tab.</div>
+<div class="tab-content" data-show-if=".tab-3-active">Content for the third tab.</div>
 ```
 
 *Demo:* [Tabs on Codepen](https://codepen.io/panphora/pen/RwNJWWx)
@@ -49,12 +70,15 @@ Or `npm install classmatic`.
 <img src="demo/gifs/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo">
 
 ```html
-<button data-click-to-toggle-class="nav-menu-open">Toggle Menu</button>
-<ul class="nav-menu__menu" data-click-away-to-remove-class="nav-menu-open" data-show-if=".nav-menu-open">
-  <li><a href="#">Menu Item</a></li>
-  <li><a href="#">Menu Item</a></li>
-  <li><a href="#">Menu Item</a></li>
-</ul>
+<div class="dropdown">
+  <button data-click-to-toggle-class="dropdown-open">Products&nbsp; &#9662;</button>
+  <ul class="dropdown__menu" data-click-away-to-remove-class="dropdown-open" data-show-if=".dropdown-open">
+    <li><a href="#">Access Connect</a></li>
+    <li><a href="#">Acquire Connect</a></li>
+    <li><a href="#">Prospect Connect</a></li>
+    <li><a href="#">Data Connect</a></li>
+  </ul>
+</div>
 ```
 
 *Demo:* [Nav Menu on Codepen](https://codepen.io/panphora/pen/GRgGpZx)
