@@ -11,7 +11,7 @@ Click an element to add or remove a class on another element.
 Add this to your `<head>`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/panphora/classmatic@v0.6.1/dist/classmatic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/panphora/classmatic@v0.6.1/dist/classmatic.min.js" defer></script>
 ```
 
 Or `npm install classmatic`.
