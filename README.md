@@ -65,7 +65,7 @@ Or `npm install classmatic`.
 
 *Demo:* [Tabs on Codepen](https://codepen.io/panphora/pen/RwNJWWx?editors=1000)
 
-#### Dropdown menu
+#### Dropdown Menu
 
 <img src="demo/gifs/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo">
 
@@ -81,7 +81,7 @@ Or `npm install classmatic`.
 </div>
 ```
 
-*Demo:* [Nav Menu on Codepen](https://codepen.io/panphora/pen/GRgGpZx)
+*Demo:* [Dropdown Menu on Codepen](https://codepen.io/panphora/pen/GRgGpZx?editors=1000)
 
 ## The Attributes
 
