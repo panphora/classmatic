@@ -105,6 +105,6 @@ Or `npm install classmatic`.
 
 * `selector` defaults to `body` for the "click" attributes
 * Target multiple classes: `[className1,className2]` (no spaces!)
-• A **click away** action won't trigger if there's a normal click action with the same targets
+* A **click away** action won't trigger if there's a normal click action with the same targets
 
 
