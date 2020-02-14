@@ -9,7 +9,8 @@
   "scripts": {
     "watch": "npx rollup -c -w",
     "build": "npx rollup -c",
-    "start": "concurrently \"http-server -a localhost -p 5000\" \"open http://localhost:5000/demo\""
+    "start": "concurrently \"http-server -a localhost -p 5000\" \"open http://localhost:5000/demo\"",
+    "website": "pandoc README.md -f markdown -t html -s -o ./docs/index.html --metadata title='Classmatic'"
   },
   "author": "David Miranda",
   "license": "MIT",
