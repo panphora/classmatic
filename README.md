@@ -6,6 +6,10 @@ Click an element to add or remove a class on another element.
 
 > All the JavaScript you need for simple modals, dropdowns, and tabs
 
+## How it works
+
+<img src="demo/images/dropdown.png" width="840" alt="How Classmatic Works">
+
 ## Install
 
 Add this to your `<head>`:
