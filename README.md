@@ -85,26 +85,26 @@ Or `npm install classmatic`.
 ## Code
 
 * `data-click-to-add-class="className selector(optional)"`
-  * Adds the `className` class to all elements that match `selector` (only when the current element is clicked)
+  * When element is clicked, add `className` to `selector`
 * `data-click-to-remove-class="className selector(optional)"`
-  * Removes the `className` class from all elements that match `selector` (only when the current element is clicked)
+  * When element is clicked, remove `className` from `selector`
 * `data-click-to-toggle-class="className selector(optional)"`
-  * Toggles the `className` class on all elements that match `selector` (only when the current element is clicked)
+  * When element is clicked, toggle `className` on `selector`
 * `data-click-away-to-add-class="className selector(optional)"`
-  * Adds the `className` class to all elements that match `selector` (only when an element that's not the current element is clicked)
+  * When element is **not** clicked, add `className` to `selector`
 * `data-click-away-to-remove-class="className selector(optional)"`
-  * Removes the `className` class from all elements that match `selector` (only when an element that's not the current element is clicked)
+  * When element is **not** clicked, remove `className` from `selector`
 * `data-click-away-to-toggle-class="className selector(optional)"`
-  * Toggles the `className` class on all elements that match `selector` (only when an element that's not the current element is clicked)
+  * When element is **not** clicked, toggle `className` on `selector`
 * `data-show-if="selector"`
-  * shows element *ONLY* if it or any ancestor element matches the `selector`. hides it otherwise.
+  * Show element if ancestor matches `selector`
 * `data-hide-if="selector"`
-  * hides element *ONLY* if it or any ancestor element matches the `selector`. shows it otherwise.
+  * Hides element if ancestor matches `selector`
 
 **Notes** 
 
-* `selector` defaults to `body`.
+* `selector` defaults to `body` for the "click" attributes
 * Target multiple classes: `[className1,className2]` (no spaces!)
-• A **click away** action won't trigger if there's an overlapping normal click with the same actions
+• A **click away** action won't trigger if there's a normal click action with the same targets
 
 
