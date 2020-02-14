@@ -82,13 +82,7 @@ Or `npm install classmatic`.
 
 *Demo:* [Dropdown Menu on Codepen](https://codepen.io/panphora/pen/GRgGpZx?editors=1000)
 
-## The Attributes
-
-Classmatic lets you use a few simple attributes to control when clicking around the page will add/remove/toggle classes.
-
-### Set/unset a class when clicking on an element
-
-These attributes make clicking on their element add/remove/toggle a class on any element.
+## Code
 
 * `data-click-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that match `selector` (only when the current element is clicked)
@@ -96,32 +90,12 @@ These attributes make clicking on their element add/remove/toggle a class on any
   * Removes the `className` class from all elements that match `selector` (only when the current element is clicked)
 * `data-click-to-toggle-class="className selector(optional)"`
   * Toggles the `className` class on all elements that match `selector` (only when the current element is clicked)
-
-**Notes** 
-
-* If `selector` is not specified, Classmatic will default to targeting the `<body>` element.
-* You can set/unset multiple classes with a single attribute by using the following syntax with braces: `data-click-to-remove-class="[className1,className2] [selector1,selector2](optional)"`. The arguments inside the brances can *NOT* have spaces between them.
-* `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selector), or `[]` (for an attribute selector)
-
-### Set/unset a class when clicking *AWAY FROM* an element
-
-These attributes make clicking AWAY from their element add/remove/toggle a class on any element.
-
 * `data-click-away-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that match `selector` (only when an element that's not the current element is clicked)
 * `data-click-away-to-remove-class="className selector(optional)"`
   * Removes the `className` class from all elements that match `selector` (only when an element that's not the current element is clicked)
 * `data-click-away-to-toggle-class="className selector(optional)"`
   * Toggles the `className` class on all elements that match `selector` (only when an element that's not the current element is clicked)
-
-**Important** 
-
-* A click away action will *NOT* trigger if the current click event also triggers a normal click action targeting the same `className` and `selector`
-
-### Control visibility of elements
-
-Classmatic makes it really easy to hide and show elements based on the classes on the page.
-
 * `data-show-if="selector"`
   * shows element *ONLY* if it or any ancestor element matches the `selector`. hides it otherwise.
 * `data-hide-if="selector"`
@@ -129,9 +103,8 @@ Classmatic makes it really easy to hide and show elements based on the classes o
 
 **Notes** 
 
-* The styles that make these attributes work are generated automatically for you as soon as Classmatic loads. This is why Classmatic should be loaded after your page's elements are done loading (just before the closing `</body>` tag). Otherwise, it won't know which elements to generate hide/show styles for.
-
-
-
+* `selector` defaults to `body`.
+* Target multiple classes: `[className1,className2]` (no spaces!)
+• A **click away** action won't trigger if there's an overlapping normal click with the same actions
 
 
