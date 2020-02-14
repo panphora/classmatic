@@ -8,7 +8,7 @@ A small library for toggling menus, dropdowns, and tabs.
 
 ## How it works
 
-<img src="demo/images/dropdown.png" width="840" alt="How Classmatic Works">
+<img src="/demo/images/dropdown.png" width="840" alt="How Classmatic Works">
 
 ## Install
 
