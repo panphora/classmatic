@@ -2,9 +2,9 @@
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/classmatic)
 
-Click an element to add or remove a class on another element.
+A small library for toggling menus, dropdowns, and tabs.
 
-> All the JavaScript you need for simple modals, dropdowns, and tabs
+> Just enough JS for simple websites.
 
 ## How it works
 
