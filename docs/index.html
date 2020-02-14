@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Classmatic</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Classmatic</h1>
+</header>
+<h1 id="classmatic">Classmatic</h1>
+<figure>
+<img src="https://img.shields.io/bundlephobia/minzip/classmatic" alt="" /><figcaption>npm bundle size</figcaption>
+</figure>
+<p>A small library for toggling menus, dropdowns, and tabs.</p>
+<blockquote>
+<p>Just enough JS for simple websites.</p>
+</blockquote>
+<h2 id="how-it-works">How it works</h2>
+<p><img src="/demo/images/dropdown.png" width="840" alt="How Classmatic Works"></p>
+<h2 id="install">Install</h2>
+<p>Add this to your <code>&lt;head&gt;</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://cdn.jsdelivr.net/gh/panphora/classmatic@v0.6.1/dist/classmatic.min.js&quot;</span><span class="ot"> defer</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
+<p>Or <code>npm install classmatic</code>.</p>
+<h2 id="examples">Examples</h2>
+<h4 id="sidebar">Sidebar</h4>
+<p><img src="/demo/gifs/classmatic-demo--sidebar.gif" width="400" alt="Sidebar demo"></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;div</span><span class="ot"> data-show-if=</span><span class="st">&quot;.sidebar-open&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="kw">&lt;button</span><span class="ot"> data-click-to-remove-class=</span><span class="st">&quot;sidebar-open&quot;</span><span class="kw">&gt;</span>close<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="kw">&lt;h3&gt;</span>Menu<span class="kw">&lt;/h3&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="kw">&lt;ul&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>    <span class="kw">&lt;li&gt;</span>Home<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="kw">&lt;li&gt;</span>Features<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="kw">&lt;li&gt;</span>About<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>    <span class="kw">&lt;li&gt;</span>Contact Us<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>  <span class="kw">&lt;/ul&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="kw">&lt;/div&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="kw">&lt;button</span><span class="ot"> data-click-to-toggle-class=</span><span class="st">&quot;sidebar-open&quot;</span><span class="kw">&gt;</span>Toggle sidebar<span class="kw">&lt;/button&gt;</span></span></code></pre></div>
+<p><em>Demo:</em> <a href="https://codepen.io/panphora/pen/ZEYRbbE?editors=1000">Sidebar on Codepen</a></p>
+<h4 id="tabs">Tabs</h4>
+<p><img src="/demo/gifs/classmatic-demo--tabs.gif" width="400" alt="Tabs demo"></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;button</span> </span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="ot">  data-click-to-add-class=</span><span class="st">&quot;tab-1-active&quot;</span> </span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="ot">  data-click-to-remove-class=</span><span class="st">&quot;[tab-2-active,tab-3-active]&quot;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">&gt;</span>Tab 1<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="kw">&lt;button</span> </span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="ot">  data-click-to-add-class=</span><span class="st">&quot;tab-2-active&quot;</span> </span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="ot">  data-click-to-remove-class=</span><span class="st">&quot;[tab-1-active,tab-3-active]&quot;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="kw">&gt;</span>Tab 2<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="kw">&lt;button</span> </span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="ot">  data-click-to-add-class=</span><span class="st">&quot;tab-3-active&quot;</span> </span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="ot">  data-click-to-remove-class=</span><span class="st">&quot;[tab-1-active,tab-2-active]&quot;</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="kw">&gt;</span>Tab 3<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="kw">&lt;div</span><span class="ot"> data-show-if=</span><span class="st">&quot;.tab-1-active&quot;</span><span class="kw">&gt;</span>First tab content.<span class="kw">&lt;/div&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="kw">&lt;div</span><span class="ot"> data-show-if=</span><span class="st">&quot;.tab-2-active&quot;</span><span class="kw">&gt;</span>Second tab content.<span class="kw">&lt;/div&gt;</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="kw">&lt;div</span><span class="ot"> data-show-if=</span><span class="st">&quot;.tab-3-active&quot;</span><span class="kw">&gt;</span>Third tab content.<span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<p><em>Demo:</em> <a href="https://codepen.io/panphora/pen/RwNJWWx?editors=1000">Tabs on Codepen</a></p>
+<h4 id="dropdown-menu">Dropdown Menu</h4>
+<p><img src="/demo/gifs/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo"></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">&lt;button</span><span class="ot"> data-click-to-toggle-class=</span><span class="st">&quot;dropdown-open&quot;</span><span class="kw">&gt;</span>Products<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">&lt;ul</span><span class="ot"> data-click-away-to-remove-class=</span><span class="st">&quot;dropdown-open&quot;</span><span class="ot"> data-show-if=</span><span class="st">&quot;.dropdown-open&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="kw">&lt;li&gt;</span>Access Connect<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="kw">&lt;li&gt;</span>Acquire Connect<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>  <span class="kw">&lt;li&gt;</span>Prospect Connect<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>  <span class="kw">&lt;li&gt;</span>Data Connect<span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="kw">&lt;/ul&gt;</span></span></code></pre></div>
+<p><em>Demo:</em> <a href="https://codepen.io/panphora/pen/GRgGpZx?editors=1000">Dropdown Menu on Codepen</a></p>
+<h2 id="code">Code</h2>
+<ul>
+<li><code>data-click-to-add-class="className selector(optional)"</code>
+<ul>
+<li>When element is clicked, add <code>className</code> to <code>selector</code></li>
+</ul></li>
+<li><code>data-click-to-remove-class="className selector(optional)"</code>
+<ul>
+<li>When element is clicked, remove <code>className</code> from <code>selector</code></li>
+</ul></li>
+<li><code>data-click-to-toggle-class="className selector(optional)"</code>
+<ul>
+<li>When element is clicked, toggle <code>className</code> on <code>selector</code></li>
+</ul></li>
+<li><code>data-click-away-to-add-class="className selector(optional)"</code>
+<ul>
+<li>When element is <strong>not</strong> clicked, add <code>className</code> to <code>selector</code></li>
+</ul></li>
+<li><code>data-click-away-to-remove-class="className selector(optional)"</code>
+<ul>
+<li>When element is <strong>not</strong> clicked, remove <code>className</code> from <code>selector</code></li>
+</ul></li>
+<li><code>data-click-away-to-toggle-class="className selector(optional)"</code>
+<ul>
+<li>When element is <strong>not</strong> clicked, toggle <code>className</code> on <code>selector</code></li>
+</ul></li>
+<li><code>data-show-if="selector"</code>
+<ul>
+<li>Show element if ancestor matches <code>selector</code></li>
+</ul></li>
+<li><code>data-hide-if="selector"</code>
+<ul>
+<li>Hides element if ancestor matches <code>selector</code></li>
+</ul></li>
+</ul>
+<p><strong>Notes</strong></p>
+<ul>
+<li><code>selector</code> defaults to <code>body</code> for the “click” attributes</li>
+<li>Target multiple classes: <code>[className1,className2]</code> (no spaces!)</li>
+<li>A <strong>click away</strong> action won’t trigger if there’s a normal click action with the same targets</li>
+</ul>
+</body>
+</html>

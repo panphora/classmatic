@@ -24,7 +24,7 @@ Or `npm install classmatic`.
 
 #### Sidebar
 
-<img src="demo/gifs/classmatic-demo--sidebar.gif" width="400" alt="Sidebar demo">
+<img src="/demo/gifs/classmatic-demo--sidebar.gif" width="400" alt="Sidebar demo">
 
 ```html
 <div data-show-if=".sidebar-open">
@@ -44,7 +44,7 @@ Or `npm install classmatic`.
 
 #### Tabs
 
-<img src="demo/gifs/classmatic-demo--tabs.gif" width="400" alt="Tabs demo">
+<img src="/demo/gifs/classmatic-demo--tabs.gif" width="400" alt="Tabs demo">
 
 ```html
 <button 
@@ -68,7 +68,7 @@ Or `npm install classmatic`.
 
 #### Dropdown Menu
 
-<img src="demo/gifs/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo">
+<img src="/demo/gifs/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo">
 
 ```html
 <button data-click-to-toggle-class="dropdown-open">Products</button>
