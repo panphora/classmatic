@@ -8,7 +8,7 @@ A small library for toggling menus, dropdowns, and tabs.
 
 ## How it works
 
-<img src="/docs/images/dropdown.png" width="840" alt="How Classmatic Works">
+<img src="https://panphora.github.io/classmatic/images/dropdown.png" width="840" alt="How Classmatic Works">
 
 ## Install
 
@@ -24,7 +24,7 @@ Or `npm install classmatic`.
 
 #### Sidebar
 
-<img src="/docs/images/classmatic-demo--sidebar.gif" width="400" alt="Sidebar demo">
+<img src="https://panphora.github.io/classmatic/images/classmatic-demo--sidebar.gif" width="400" alt="Sidebar demo">
 
 ```html
 <div data-show-if=".sidebar-open">
@@ -44,7 +44,7 @@ Or `npm install classmatic`.
 
 #### Tabs
 
-<img src="/docs/images/classmatic-demo--tabs.gif" width="400" alt="Tabs demo">
+<img src="https://panphora.github.io/classmatic/images/classmatic-demo--tabs.gif" width="400" alt="Tabs demo">
 
 ```html
 <button 
@@ -68,7 +68,7 @@ Or `npm install classmatic`.
 
 #### Dropdown Menu
 
-<img src="/docs/images/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo">
+<img src="https://panphora.github.io/classmatic/images/classmatic-demo--dropdown.gif" width="400" alt="Dropdown menu demo">
 
 ```html
 <button data-click-to-toggle-class="dropdown-open">Products</button>
